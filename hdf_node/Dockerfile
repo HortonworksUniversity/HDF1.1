@@ -2,7 +2,7 @@ FROM hwxu/ambari_2.2_node
 
 MAINTAINER Rich Raposa, rich@hortonworks.com
 
-RUN curl http://public-repo-1.hortonworks.com/HDF/1.1.2.1/HDF-1.1.2.1-34.tar.gz | tar -zxf -C /root/ 
+RUN curl http://public-repo-1.hortonworks.com/HDF/1.1.2.1/HDF-1.1.2.1-34.tar.gz | tar zx -C /root/ 
 
 RUN yum -y update && yum -y install java-1.8.0-openjdk
 
